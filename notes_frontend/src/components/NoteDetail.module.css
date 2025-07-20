@@ -1,0 +1,78 @@
+.detail {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #4f46e513;
+  padding: 1.6em 2em 1.6em 2em;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.7em;
+}
+.header h2 {
+  margin: 0;
+}
+.actions {
+  display: flex;
+  gap: 0.7em;
+}
+.editBtn,
+.deleteBtn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.45em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.editBtn {
+  background: var(--color-primary);
+  color: #fff;
+}
+.editBtn:hover {
+  background: #3f37c9;
+}
+.deleteBtn {
+  background: #fff8f0;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+.deleteBtn:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+.meta {
+  color: #b1b3d4;
+  font-size: 0.93em;
+  margin-bottom: 1em;
+}
+.content {
+  font-size: 1.12em;
+  color: var(--color-text);
+}
+.content pre {
+  font-family: inherit;
+  background: #fcfcfd;
+  margin: 0;
+  padding: 1em;
+  border-radius: 9px;
+  font-size: 1em;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.noContent {
+  color: #bbb;
+  font-style: italic;
+  margin: 2em 0;
+}
+
+@media (max-width: 600px) {
+  .detail {
+    padding: 1em 0.2em 1.2em 0.2em;
+  }
+}

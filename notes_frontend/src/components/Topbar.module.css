@@ -1,0 +1,61 @@
+.topbar {
+  width: 100vw;
+  height: 60px;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 30;
+  box-shadow: 0 1px 7px #4f46e520;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding-left: 1.4em;
+}
+.logo {
+  font-size: 1.36rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.1px;
+}
+.menuBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.6em;
+  padding: 0.4em;
+  display: inline-flex;
+}
+.menuIcon {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  position: relative;
+}
+.menuIcon::before,
+.menuIcon::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  left: 0;
+}
+.menuIcon::before {
+  top: -9px;
+}
+.menuIcon::after {
+  bottom: -9px;
+}
+
+@media (min-width: 700px) {
+  .menuBtn {
+    display: none;
+  }
+}
